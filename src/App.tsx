@@ -1,16 +1,12 @@
+// src/App.tsx
 import React from "react";
-import { Navbar, Welcome, Footer, Services, Transactions } from "./components";
 
-const App: React.FC = () => (
-  <div className="min-h-screen">
-    <div className="gradient-bg-welcome">
-      <Navbar />
-      <Welcome />
+const App: React.FC = () => {
+  return (
+    <div className="min-h-screen bg-[#0f0e13] text-white">
+      <h1 className="text-3xl font-medium p-8">App running</h1>
     </div>
-    <Services />
-    <Transactions />
-    <Footer />
-  </div>
-);
+  );
+};
 
 export default App;
