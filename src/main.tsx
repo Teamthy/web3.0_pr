@@ -1,12 +1,13 @@
-import ReactDOM from "react-dom/client";
+import React from "react";
+import ReactDOM from "react-dom";
 
 import App from "./App";
 import { TransactionsProvider } from "./context/TransactionContext";
 import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
-root.render(
+ReactDOM.render(
   <TransactionsProvider>
     <App />
-  </TransactionsProvider>
+  </TransactionsProvider>,
+  document.getElementById("root"),
 );

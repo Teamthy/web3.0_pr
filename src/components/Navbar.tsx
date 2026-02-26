@@ -51,7 +51,7 @@ const Navbar = () => {
         )}
 
         {toggleMenu && (
-          <ul className="z-10 fixed top-0 right-0 p-5 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col items-end bg-gray-900 text-white animate-slide-in">
+          <ul className="z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden list-none flex flex-col items-end rounded-md blue-glassmorphism text-white animate-slide-in">
             <li className="text-xl w-full flex justify-end mb-4">
               <AiOutlineClose onClick={() => setToggleMenu(false)} />
             </li>
